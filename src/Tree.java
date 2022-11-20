@@ -9,11 +9,10 @@ Stwórz drzewo binarne liczb w którym liczby większe są po prawej stronie, a 
 
 public class Tree {
 
-    private Node node;
+    private Node node = new Node();
 
     public void add (int value) {
         if (node == null){
-            node = new Node();
             node.setValue(value);
         } else {
             addNode(value,node);
